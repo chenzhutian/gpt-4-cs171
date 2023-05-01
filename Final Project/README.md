@@ -8,16 +8,15 @@
 
 | File                                                                    |                Goal                 |
 |:------------------------------------------------------------------------|:-----------------------------------:|
-| [G4 VIS Design.md](Visualization Design/G4 VIS Design.md)               | Generating basic Visualization code |
-| [G4 VIS Improvement 1.md](Visualization Design/G4 VIS Improvement 1.md) |   Improving functionality and UI    |
-| [G4 VIS Improvement 2.md](Visualization Design/G4 VIS Improvement 2.md) |       Adding hover (tooltip)        |
-| [G4 VIS Improvement 3.md](Visualization Design/G4 VIS Improvement 3.md) |             Adding oom              |
-| [G4 VIS Improvement 4.md](Visualization Design/G4 VIS Improvement 4.md) |          Adding reset zoom          |
+| [G4_VIS_Design.md](Visualization_Design/G4_VIS_Design.md)               | Generating basic Visualization code |
+| [G4_VIS_Improvement_1.md](Visualization_Design/G4_VIS_Improvement_1.md) |   Improving functionality and UI    |
+| [G4_VIS_Improvement_2.md](Visualization_Design/G4_VIS_Improvement_2.md) |       Adding hover (tooltip)        |
+| [G4_VIS_Improvement_3.md](Visualization_Design/G4_VIS_Improvement_3.md) |             Adding oom              |
+| [G4_VIS_Improvement_4.md](Visualization_Design/G4_VIS_Improvement_4.md) |          Adding reset zoom          |
 
-![VIS Design](./Visualization%20Design/VIS%20Design.png)
+![VIS Design](./Visualization_Design/VIS_Design.png)
 
-| Visualization designed and implemented by GPT 4. ([VIS Design.html](./Visualization Design/VIS Design.html))
-
+| Visualization designed and implemented by GPT 4. ([VIS_Design.html](./Visualization_Design/VIS_Design.html))
 
 ## Visualization Reading
 
