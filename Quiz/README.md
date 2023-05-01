@@ -1,5 +1,8 @@
 # Quiz
 
+![An example of a single-choice question in a quiz.](../src/quiz_exp.jpg)
+> an example of a single-choice question in a quiz.
+
 ## Directory Structure
 
 - [code](./code): The code for data processing, chat completion and grade evaluation.

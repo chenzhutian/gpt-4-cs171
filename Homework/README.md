@@ -1,5 +1,8 @@
 # Homework
 
+![An example of the instructions in a programming homework.](../src/hw_exp.jpg)
+> An example of the instructions in a programming homework.
+
 ## GPT3 / GPT4
 
 These two folders ([GPT3](./GPT3) and [GPT4](./GPT4)) contain the all the materials GPT used and generated when working on the homework assignments week by week.
