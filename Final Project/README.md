@@ -1,9 +1,5 @@
 # Final Project
 
-## Project Planning
-
-## Data Collection and Cleanup
-
 ## Visualization Design
 
 | File                                                                    |                Goal                 |
