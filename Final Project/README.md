@@ -14,9 +14,9 @@
 | [G4 VIS Improvement 3.md](Visualization Design/G4 VIS Improvement 3.md) |             Adding oom              |
 | [G4 VIS Improvement 4.md](Visualization Design/G4 VIS Improvement 4.md) |          Adding reset zoom          |
 
-![VIS Design](Visualization Design/VIS Design.png)
+![VIS Design](./Visualization Design/VIS Design.png)
 
-| Visualization designed and implemented by GPT 4. ([VIS Design.html](Visualization Design/VIS Design.html))
+| Visualization designed and implemented by GPT 4. ([VIS Design.html](./Visualization Design/VIS Design.html))
 
 
 ## Visualization Reading
