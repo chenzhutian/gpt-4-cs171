@@ -16,7 +16,7 @@
 
 ![VIS Design](./Visualization_Design/VIS_Design.png)
 
-| Visualization designed and implemented by GPT 4. ([VIS_Design.html](./Visualization_Design/VIS_Design.html))
+> Visualization designed and implemented by GPT 4. ([VIS_Design.html](./Visualization_Design/VIS_Design.html))
 
 ## Interaction with Visualization
 
@@ -28,9 +28,13 @@
 | [G4_VIS_Interaction_4.md](Interaction_with_Visualization/G4_VIS_Interaction_4.md) |                          explicit guidance; succeed in axis setting and naive zooming                           |
 | [G4_VIS_Interaction_5.md](Interaction_with_Visualization/G4_VIS_Interaction_5.md) |                                explicit + implicit guidance; succeed in zooming                                 |
 
+![Interaction with Visualization](./Interaction_with_Visualization/observations.png)
+
+> Observations from interacting with VIS system ([VIS_Design.html](./Visualization_Design/VIS_Design.html)) by executing the JavaScript code in [G4_VIS_Interaction_1.md](Interaction_with_Visualization/G4_VIS_Interaction_1.md).
+
 ## Insight Discovery
 
-Interacting with VIS system ([VIS_Design.html](./Visualization_Design/VIS_Design.html)) by executing the JavaScript code in [G4_VIS_Interaction_1.md](Interaction_with_Visualization/G4_VIS_Interaction_1.md).
+Interacting with VIS system ([VIS_Design.html](./Visualization_Design/VIS_Design.html)) by executing the JavaScript code in [G4_VIS_Interaction_1.md](Interaction_with_Visualization/G4_VIS_Interaction_1.md), GPT 4 gained the following insights:
 
 | File                                                           |                                               Note                                                |
 |:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|
