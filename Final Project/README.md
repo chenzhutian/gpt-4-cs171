@@ -30,6 +30,16 @@
 
 ## Insight Discovery
 
+Interacting with VIS system ([VIS_Design.html](./Visualization_Design/VIS_Design.html)) by executing the JavaScript code in [G4_VIS_Interaction_1.md](Interaction_with_Visualization/G4_VIS_Interaction_1.md).
+
+| File                                                           |                                               Note                                                |
+|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------:|
+| [G4_VIS_Insights_1.md](Insight_Discovery/G4_VIS_Insights_1.md) |                                   Insights through observations                                   |
+| [G4_VIS_Insights_2.md](Insight_Discovery/G4_VIS_Insights_2.md) |                                   Insights through observations                                   |
+| [G4_VIS_Insights_3.md](Insight_Discovery/G4_VIS_Insights_3.md) | A report provided to the government of African developing countries to help their decision making |
+| [G4_VIS_Insights_4.md](Insight_Discovery/G4_VIS_Insights_4.md) |                a report provided to the UN to assist their decision-making process                |
+| [G4_VIS_Insights_5.md](Insight_Discovery/G4_VIS_Insights_5.md) |                           Reading materials for primary school students                           |
+
 ## Narrative Visualization
 
 
