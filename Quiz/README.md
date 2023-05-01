@@ -37,8 +37,8 @@
 
 ### Grades
 
-  - [Post-Lecture Quiz Report-G3.md](./Grade_Report/Post-Lecture Quiz Report-G3.md)
-  - [Post-Lecture Quiz Report-G4.md](./Grade_Report/Post-Lecture Quiz Report-G4.md)
+  - [Post-Lecture Quiz Report-G3.md](./Grade_Report/Post-Lecture%20Quiz%20Report-G3.md)
+  - [Post-Lecture Quiz Report-G4.md](./Grade_Report/Post-Lecture%20Quiz%20Report-G4.md)
   - [Pre-Quiz (Lab) Report-G3.md](<./Grade_Report/Pre-Quiz (Lab) Report-G3.md>)
   - [Pre-Quiz (Lab) Report-G4.md](<./Grade_Report/Pre-Quiz (Lab) Report-G4.md>)
 
