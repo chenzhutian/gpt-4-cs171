@@ -2,16 +2,16 @@
 
 ## Directory Structure
 
-- [./code](./code): The code for data processing, chat completion and grade evaluation.
+- [code](./code): The code for data processing, chat completion and grade evaluation.
   - [clean.py](./code/clean.py): Clean the raw exported data.
   - [grading.py](./code/grading.py): Evaluate the grade of each question.
   - [prompts.py](./code/prompts.py): Chat completion for each question.
   - [summary.py](./code/summary.py): Generate summary for each GPT model and quiz type.
   - [XML_to_QA.py](./code/XML_to_QA.py): Convert XML to QA format.
 
-- [./compsci-171-visualization-quiz-export](./compsci-171-visualization-quiz-export): The raw data of quiz.
+- [compsci-171-visualization-quiz-export](./compsci-171-visualization-quiz-export): The raw data of quiz.
 
-- [./data_by_week](./data_by_week): The processed data of weekly quiz, including:
+- [data_by_week](./data_by_week): The processed data of weekly quiz, including:
   - `answers`: answers for each question, from different GPT model, `iter` times of iteration.
     - eg. `G3-iter10` means answers from GPT3.5, 10 iterations (attempts) for each question.
   - `items`, `assessment_meta.xml`, `data_meta.xml`: meta data
