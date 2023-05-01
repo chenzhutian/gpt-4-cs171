@@ -46,4 +46,13 @@ Interacting with VIS system ([VIS_Design.html](./Visualization_Design/VIS_Design
 
 ## Narrative Visualization
 
+Given the insights in [G4_VIS_Insights_1.md](Insight_Discovery/G4_VIS_Insights_1.md) and raw data, GPT 4 generated the following narrative visualization:
+
+| File                                                                   |                                  Examples                                   |
+|:-----------------------------------------------------------------------|:---------------------------------------------------------------------------:|
+| [G4 VIS Narrative 1.md](Narrative_Visualization/G4_VIS_Narrative_1.md) |   ![Narrative Visualization 1](./Narrative_Visualization/narrative_1.png)   |
+| [G4 VIS Narrative 2.md](Narrative_Visualization/G4_VIS_Narrative_2.md) |   ![Narrative Visualization 2](./Narrative_Visualization/narrative_2.png)   |
+| [G4 VIS Narrative 3.md](Narrative_Visualization/G4_VIS_Narrative_3.md) | ![Narrative Visualization 3_1](./Narrative_Visualization/narrative_3_1.png) |
+| [G4 VIS Narrative 4.md](Narrative_Visualization/G4_VIS_Narrative_4.md) |   ![Narrative Visualization 4](./Narrative_Visualization/narrative_4.png)   |
+| [G4 VIS Narrative 5.md](Narrative_Visualization/G4_VIS_Narrative_5.md) |   ![Narrative Visualization 5](./Narrative_Visualization/narrative_5.png)   |
 
