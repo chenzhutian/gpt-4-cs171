@@ -1,0 +1,66 @@
+<item ident="g0e32ea1bfe959494c399c78b1dd1a975" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2025,4577,4433,7789</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g3a11831d50ab31712545203b260d5184</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Which color palette would be a better choice for this data visualization and why?&lt;/p&gt;
+&lt;p&gt;A. Red-Green Color Palette&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Picture1-1.png" alt="Picture1-1.png" width="321" height="239"&gt;&lt;/p&gt;
+&lt;p&gt;B. Blue-Orange Color Palette&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Picture2.png" alt="Picture2.png" width="326" height="239"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2025">
+                <material>
+                  <mattext texttype="text/plain">The Red-Green (A) because red is universally understood as bad and green as good.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4577">
+                <material>
+                  <mattext texttype="text/plain">The Red-Green (A) because it’s a color-blind friendly palette.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4433">
+                <material>
+                  <mattext texttype="text/plain">The Blue-Orange (B) because it’s a color-blind friendly palette.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7789">
+                <material>
+                  <mattext texttype="text/plain">Neither color palette is good because we should use a categorical color scheme for this purpose.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4433</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

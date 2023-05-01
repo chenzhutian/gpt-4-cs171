@@ -1,0 +1,76 @@
+<item ident="gbee733bade45da025128c010bc94a48d" title="Web Console">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>16276,2402,80474,90833</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g641edc4562ec8446ceb5ae24b8b07dcf</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;&lt;span&gt;The &lt;/span&gt;&lt;i&gt;&lt;span&gt;Web Console&lt;/span&gt;&lt;/i&gt;&lt;span&gt; allows you to type JavaScript code directly into your browser and it is also an essential tool for debugging. It shows logged security alerts, warnings, errors and informational messages by JavaScript code running in the page context. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;How do you write a debug message in your JavaScript file that will show up in the &lt;span style="text-decoration: underline;"&gt;Web Console&lt;/span&gt; of your browser?&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="16276">
+                <material>
+                  <mattext texttype="text/plain">console.log("Hello World");</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2402">
+                <material>
+                  <mattext texttype="text/plain">print("Hello World”);</mattext>
+                </material>
+              </response_label>
+              <response_label ident="80474">
+                <material>
+                  <mattext texttype="text/plain">msgBox("Hello World");</mattext>
+                </material>
+              </response_label>
+              <response_label ident="90833">
+                <material>
+                  <mattext texttype="text/plain">alert("Hello World");</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">16276</varequal>
+                <not>
+                  <varequal respident="response1">2402</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">80474</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">90833</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

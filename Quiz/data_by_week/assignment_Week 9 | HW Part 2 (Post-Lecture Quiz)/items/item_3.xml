@@ -1,0 +1,62 @@
+<item ident="gf577547781ec48d6c5cf35160065a77e" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>1263,2929,9848,4983</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g6f6a8f71d1e811605f4505cfd2a4ce87</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;A storyboard is:&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="1263">
+                <material>
+                  <mattext texttype="text/plain">a set of visualizations about the same topic</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2929">
+                <material>
+                  <mattext texttype="text/plain">always following Freytag's story narrative</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9848">
+                <material>
+                  <mattext texttype="text/plain">a linear sequence of sketches that visualize a story</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4983">
+                <material>
+                  <mattext texttype="text/plain">a story that is being told in comic form</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9848</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

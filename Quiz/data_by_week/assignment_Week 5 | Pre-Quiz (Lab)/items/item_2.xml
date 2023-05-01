@@ -1,0 +1,76 @@
+<item ident="gebc6c6ef4878ba3b9cad5f3469e774e5" title="D3 Min/Max">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>98229,17634,47688,40040</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g6b1c07b47dc503c6dfbb83ce1b0ed02a</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;&lt;span&gt;Select the answer with the correct value of the variable &lt;/span&gt;&lt;strong&gt;“result”&lt;/strong&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;var products = [&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&amp;nbsp; { name: "PC", price: 1200 },&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&amp;nbsp; { name: "Phone", price: 800 }&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;];&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;var result = d3.max(products, function(d) {&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&amp;nbsp; return d.price;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;});&lt;/strong&gt;&lt;/pre&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="98229">
+                <material>
+                  <mattext texttype="text/plain">1200</mattext>
+                </material>
+              </response_label>
+              <response_label ident="17634">
+                <material>
+                  <mattext texttype="text/plain">400</mattext>
+                </material>
+              </response_label>
+              <response_label ident="47688">
+                <material>
+                  <mattext texttype="text/plain">1800</mattext>
+                </material>
+              </response_label>
+              <response_label ident="40040">
+                <material>
+                  <mattext texttype="text/plain">2000</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">98229</varequal>
+                <not>
+                  <varequal respident="response1">17634</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">47688</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">40040</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

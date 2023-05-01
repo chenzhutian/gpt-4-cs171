@@ -1,0 +1,70 @@
+<item ident="g3f912b12ebb80971af4979929427189a" title="Selectors (2)">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>7236,33247,99968,74116</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g6aad2bf897aa2904b8292d4b985908d4</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;How do you select &lt;/span&gt;&lt;span&gt;all&lt;/span&gt;&lt;span&gt; highlighted elements inside this div block?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&amp;lt;div class=”container”&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;strong&gt;&amp;nbsp; &amp;lt;p class=”custom-paragraph” id=”paragraph-1607”&amp;gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&amp;nbsp; &amp;lt;p class=”custom-paragraph” id=”paragraph-1608”&amp;gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&amp;nbsp; &amp;lt;p class=”custom-paragraph” id=”paragraph-1609”&amp;gt;&lt;br&gt;&lt;/strong&gt;&lt;span&gt;&amp;lt;/div&amp;gt;&lt;br&gt;&lt;br&gt;Please select ALL correct answers (multiple answers possible).&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="7236">
+                <material>
+                  <mattext texttype="text/plain">div</mattext>
+                </material>
+              </response_label>
+              <response_label ident="33247">
+                <material>
+                  <mattext texttype="text/plain">div p</mattext>
+                </material>
+              </response_label>
+              <response_label ident="99968">
+                <material>
+                  <mattext texttype="text/plain">.custom-paragraph</mattext>
+                </material>
+              </response_label>
+              <response_label ident="74116">
+                <material>
+                  <mattext texttype="text/plain">.container p</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">7236</varequal>
+                </not>
+                <varequal respident="response1">33247</varequal>
+                <varequal respident="response1">99968</varequal>
+                <varequal respident="response1">74116</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

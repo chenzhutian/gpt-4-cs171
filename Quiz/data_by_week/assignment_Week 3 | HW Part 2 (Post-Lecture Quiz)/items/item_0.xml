@@ -1,0 +1,69 @@
+<item ident="g574425b038d97109b4ffd6dc5b697f2f" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>522,419,2804,9877,3740</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g95a2beb077c924b44b277f45700261e0</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;This visualization shows new Covid cases per day. It lacks graphical integrity because of:&lt;/p&gt;
+&lt;p&gt;[Source: Fox News]&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/FoxCovidChart.jpg" alt="FoxCovidChart.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="522">
+                <material>
+                  <mattext texttype="text/plain">the lie factor</mattext>
+                </material>
+              </response_label>
+              <response_label ident="419">
+                <material>
+                  <mattext texttype="text/plain">low data-ink ratio</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2804">
+                <material>
+                  <mattext texttype="text/plain">scale distortion</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9877">
+                <material>
+                  <mattext texttype="text/plain">lack of context</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3740">
+                <material>
+                  <mattext texttype="text/plain">chartjunk</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2804</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

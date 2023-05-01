@@ -1,0 +1,77 @@
+<item ident="gd72b173b6f1c907ccaf03bedd11d49e6" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>1340,9313,3880,440,5776</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ge6b63e8945773d251fd6dcdf18a24bbb</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;The following visualization shows the results of a survey conducted in July 2013 among 1,000 U.S. adults ages 18 and older. What are the main reasons why this visualization is not effective? Select the most appropriate options.&lt;/p&gt;
+&lt;p&gt;[Data Source: &lt;a class="inline_disabled" href="https://parenting.kars4kids.org/press-release-new-survey-indicates-most-us-drivers-are-aware-of-the-dangers-of-texting-and-driving-yet-many-do-it-anyway/" target="_blank"&gt;Kars4Kids&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/DistractedDrivers.jpg" alt="DistractedDrivers.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="1340">
+                <material>
+                  <mattext texttype="text/plain">lack of graphical integrity</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9313">
+                <material>
+                  <mattext texttype="text/plain">low data-ink ratio</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3880">
+                <material>
+                  <mattext texttype="text/plain">scale distortion</mattext>
+                </material>
+              </response_label>
+              <response_label ident="440">
+                <material>
+                  <mattext texttype="text/plain">chartjunk</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5776">
+                <material>
+                  <mattext texttype="text/plain">cognitive overload</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">1340</varequal>
+                <varequal respident="response1">9313</varequal>
+                <not>
+                  <varequal respident="response1">3880</varequal>
+                </not>
+                <varequal respident="response1">440</varequal>
+                <varequal respident="response1">5776</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

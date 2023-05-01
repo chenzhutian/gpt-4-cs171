@@ -1,0 +1,62 @@
+<item ident="gff90cd04044b2e7e9c3d5ddf06f89e43" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>4340,9582,4529,4001</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g859ae572d554f2616635797b8884be29</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;What is the best description of how Tableau makes a live connection to your data?&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="4340">
+                <material>
+                  <mattext texttype="text/plain">Tableau extracts all your data into its custom data structure at regular intervals.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9582">
+                <material>
+                  <mattext texttype="text/plain">You manually load file extracts into Tableau's database.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4529">
+                <material>
+                  <mattext texttype="text/plain">Tableau maintains a connection to the data source, so data refreshes in the workbook.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4001">
+                <material>
+                  <mattext texttype="text/plain">You manually load data files into Tableau's database.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4529</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

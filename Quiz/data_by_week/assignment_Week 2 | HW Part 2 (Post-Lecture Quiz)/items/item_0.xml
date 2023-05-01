@@ -1,0 +1,62 @@
+<item ident="gbf8d5ed3a34bb382e3aa02d3c9b18d71" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>7821,8644,8966,6809</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g87708c71c357329f9bbb761173144df4</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Who designed the NY subway map in the 1970s?&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="7821">
+                <material>
+                  <mattext texttype="text/plain">Harry Beck</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8644">
+                <material>
+                  <mattext texttype="text/plain">Bill Buxton</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8966">
+                <material>
+                  <mattext texttype="text/plain">Massimo Vignelli</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6809">
+                <material>
+                  <mattext texttype="text/plain">The Metropolitan Transportation Authority</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8966</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

@@ -1,0 +1,77 @@
+<item ident="g46e27333999b78111a823b890eb5cf94" title="Axes">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.2</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>41493,83542,4372,57293,39337</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g1c6fbcbbaf6fc5d9bbda34d2218405e4</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Please select the correct sentences (Select &lt;strong&gt;all&lt;/strong&gt; that apply)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="41493">
+                <material>
+                  <mattext texttype="text/plain">An axis is a visual representation of a scale</mattext>
+                </material>
+              </response_label>
+              <response_label ident="83542">
+                <material>
+                  <mattext texttype="text/plain">Axis and scales are two different terms for the same concept</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4372">
+                <material>
+                  <mattext texttype="text/plain">Scales are functions with parameters. You can pass a data value and they return a scaled value</mattext>
+                </material>
+              </response_label>
+              <response_label ident="57293">
+                <material>
+                  <mattext texttype="text/plain">Scales help us to map data values to pixel measurements (input domain to output range)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="39337">
+                <material>
+                  <mattext texttype="text/plain">D3 provides built-in methods ONLY for linear scales</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">41493</varequal>
+                <not>
+                  <varequal respident="response1">83542</varequal>
+                </not>
+                <varequal respident="response1">4372</varequal>
+                <varequal respident="response1">57293</varequal>
+                <not>
+                  <varequal respident="response1">39337</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

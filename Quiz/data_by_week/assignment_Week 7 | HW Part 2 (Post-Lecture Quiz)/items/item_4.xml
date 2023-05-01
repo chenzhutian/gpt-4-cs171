@@ -1,0 +1,73 @@
+<item ident="g33f0835c53ef0c79c872f94a72f5dfe7" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6308,9611,1686,6803,4574</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ge688c5ae9d0547ca0c2fc77582c43139</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;An effective Dashboard design includes these elements (select all that apply):&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="6308">
+                <material>
+                  <mattext texttype="text/plain">Title</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9611">
+                <material>
+                  <mattext texttype="text/plain">Contrast</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1686">
+                <material>
+                  <mattext texttype="text/plain">Beginning, middle, and end</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6803">
+                <material>
+                  <mattext texttype="text/plain">Captions</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4574">
+                <material>
+                  <mattext texttype="text/plain">Alignment</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">6308</varequal>
+                <varequal respident="response1">9611</varequal>
+                <varequal respident="response1">1686</varequal>
+                <varequal respident="response1">6803</varequal>
+                <varequal respident="response1">4574</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

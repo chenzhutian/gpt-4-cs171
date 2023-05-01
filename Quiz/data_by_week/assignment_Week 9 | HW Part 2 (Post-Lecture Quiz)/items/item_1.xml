@@ -1,0 +1,164 @@
+<item ident="g7bbed74e4e4590a5196bdf4089a64756" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>5052,444,2430,6556</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g6d0d5988f38cb2e959f21f61cdb97971</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Assign the correct attributes to each term.&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response_5052">
+            <material>
+              <mattext texttype="text/plain">Text is (pick 1-word answer)</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="190">
+                <material>
+                  <mattext>learned</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2526">
+                <material>
+                  <mattext>processed in parallel</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9113">
+                <material>
+                  <mattext>rational and abstract</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6682">
+                <material>
+                  <mattext>innate</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_444">
+            <material>
+              <mattext texttype="text/plain">Visual information is (pick 3-word answer)</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="190">
+                <material>
+                  <mattext>learned</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2526">
+                <material>
+                  <mattext>processed in parallel</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9113">
+                <material>
+                  <mattext>rational and abstract</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6682">
+                <material>
+                  <mattext>innate</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_2430">
+            <material>
+              <mattext texttype="text/plain">Text is (pick 3-word answer)</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="190">
+                <material>
+                  <mattext>learned</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2526">
+                <material>
+                  <mattext>processed in parallel</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9113">
+                <material>
+                  <mattext>rational and abstract</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6682">
+                <material>
+                  <mattext>innate</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_6556">
+            <material>
+              <mattext texttype="text/plain">Visual information is (pick 1-word answer)</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="190">
+                <material>
+                  <mattext>learned</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2526">
+                <material>
+                  <mattext>processed in parallel</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9113">
+                <material>
+                  <mattext>rational and abstract</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6682">
+                <material>
+                  <mattext>innate</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_5052">190</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_444">2526</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_2430">9113</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_6556">6682</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

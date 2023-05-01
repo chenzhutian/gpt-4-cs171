@@ -1,0 +1,74 @@
+<item ident="gcc1d4e832a7f9556e857cfe945f597a6" title="Programming Construct (1)">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.15</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>37313,92966,1458,25638</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Select the answer with the correct value of the variable &lt;/span&gt;&lt;span style="text-decoration: underline;"&gt;&lt;em&gt;&lt;strong&gt;result&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;span&gt; after executing the whole code:&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;class Chart{&lt;br&gt;  constructor(data){&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;    this.data = data;&lt;br&gt;  }&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;};&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;var a = new Chart(10);&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;var b = new Chart(20);&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;result = a.data;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;result = b.data;&lt;/strong&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="37313">
+                <material>
+                  <mattext texttype="text/plain">20</mattext>
+                </material>
+              </response_label>
+              <response_label ident="92966">
+                <material>
+                  <mattext texttype="text/plain">10</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1458">
+                <material>
+                  <mattext texttype="text/plain">[10, 20]</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25638">
+                <material>
+                  <mattext texttype="text/plain">30</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">37313</varequal>
+                <not>
+                  <varequal respident="response1">92966</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">1458</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">25638</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="gc0f8cb3f60714bb1530094b382280ae7" title="Week 8 | Pre-Quiz (Lab)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>1</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gb4eb74a7d3a7520c99e320dcb854d557" title="&quot;this&quot; in JavaScript">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>48231,23492,66809,88943,38649,4013</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g3ac8c71351670d35d3fc747910d4a564</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Select the correct sentences regarding the keyword &lt;/span&gt;&lt;i&gt;&lt;span&gt;this&lt;/span&gt;&lt;/i&gt;&lt;span&gt; in JavaScript. (select 4)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="48231">
+                <material>
+                  <mattext texttype="text/plain">In the global execution context (outside of any function), "this" refers to the global object</mattext>
+                </material>
+              </response_label>
+              <response_label ident="23492">
+                <material>
+                  <mattext texttype="text/plain">In the global execution context (outside of any function), "this" is undefined</mattext>
+                </material>
+              </response_label>
+              <response_label ident="66809">
+                <material>
+                  <mattext texttype="text/plain">The value of "this", when used in a class object, is the object itself.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="88943">
+                <material>
+                  <mattext texttype="text/plain">Properties are variables contained in the class object. Every instance of the class has those properties.  The keyword "this" lets you work with class properties from within the class.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="38649">
+                <material>
+                  <mattext texttype="text/plain">You can change the value of "this" like for any other property in a class.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4013">
+                <material>
+                  <mattext texttype="text/plain">The value of "this" can change within a function.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">48231</varequal>
+                <not>
+                  <varequal respident="response1">23492</varequal>
+                </not>
+                <varequal respident="response1">66809</varequal>
+                <varequal respident="response1">88943</varequal>
+                <not>
+                  <varequal respident="response1">38649</varequal>
+                </not>
+                <varequal respident="response1">4013</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g19758a316051043a640e0b195d11285e" title="Constructor (1)">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>true_false_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.05</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>34544,54801</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g11bc07fe6edbec64bb10b18d514aa28f</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;The constructor is called at the moment of instantiation (when the class instance is created)&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="34544">
+                <material>
+                  <mattext texttype="text/plain">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="54801">
+                <material>
+                  <mattext texttype="text/plain">False</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">34544</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g61bfb8d88b7b5e9794481efc9e2371cd" title="Constructor (2)">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>true_false_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.05</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>27626,6779</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;The constructor is used to set the class properties or to call methods to prepare the class object for use&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="27626">
+                <material>
+                  <mattext texttype="text/plain">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6779">
+                <material>
+                  <mattext texttype="text/plain">False</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">27626</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gcc1d4e832a7f9556e857cfe945f597a6" title="Programming Construct (1)">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.15</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>37313,92966,1458,25638</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Select the answer with the correct value of the variable &lt;/span&gt;&lt;span style="text-decoration: underline;"&gt;&lt;em&gt;&lt;strong&gt;result&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;span&gt; after executing the whole code:&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;class Chart{&lt;br&gt;  constructor(data){&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;    this.data = data;&lt;br&gt;  }&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;};&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;var a = new Chart(10);&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;var b = new Chart(20);&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;result = a.data;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;result = b.data;&lt;/strong&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="37313">
+                <material>
+                  <mattext texttype="text/plain">20</mattext>
+                </material>
+              </response_label>
+              <response_label ident="92966">
+                <material>
+                  <mattext texttype="text/plain">10</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1458">
+                <material>
+                  <mattext texttype="text/plain">[10, 20]</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25638">
+                <material>
+                  <mattext texttype="text/plain">30</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">37313</varequal>
+                <not>
+                  <varequal respident="response1">92966</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">1458</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">25638</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gd9a9af0248a2a3d05de8f4a500dfb1c2" title="Programming Construct (2)">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.15</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>67481,67597,25473,93991,48068,78256</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Select the answer with the correct &lt;/span&gt;&lt;span style="text-decoration: underline;"&gt;&lt;em&gt;&lt;strong&gt;web console messages&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;span&gt; after executing the whole code. Look carefully at what code is being executed!&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;class Person {&lt;br&gt;&lt;br&gt;  constructor(firstName){&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;  this.firstName = firstName;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;  this.sayYourName();&lt;br&gt;}&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;sayYourName() {&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;  console.log(this.firstName + " ");&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;};&lt;br&gt;&lt;br&gt;};&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;let marco = new Person("Marco");&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;let polo = new Person("Polo");&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;polo.sayYourName();&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;marco.sayYourName();&lt;/strong&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="67481">
+                <material>
+                  <mattext texttype="text/plain">Marco Polo Polo Marco</mattext>
+                </material>
+              </response_label>
+              <response_label ident="67597">
+                <material>
+                  <mattext texttype="text/plain">Marco Polo Marco Polo</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25473">
+                <material>
+                  <mattext texttype="text/plain">Marco Polo</mattext>
+                </material>
+              </response_label>
+              <response_label ident="93991">
+                <material>
+                  <mattext texttype="text/plain">Polo Marco</mattext>
+                </material>
+              </response_label>
+              <response_label ident="48068">
+                <material>
+                  <mattext texttype="text/plain">Marco Marco Polo Polo</mattext>
+                </material>
+              </response_label>
+              <response_label ident="78256">
+                <material>
+                  <mattext texttype="text/plain">Polo Polo Marco Marco</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">67481</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

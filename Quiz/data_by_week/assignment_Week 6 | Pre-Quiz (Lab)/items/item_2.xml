@@ -1,0 +1,86 @@
+<item ident="g183b819a29f8fca0cadca58eb7165ffb" title="D3 Example">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.4</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>60223,1535,72300,9501,81994,10746</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;This example should give you an idea why we need a well-thought updating concept. Imagine you have an empty page and a script that created an &amp;lt;svg&amp;gt;-element and stored the selection in the variable “svg”. Please select the correct answers that describe the following code snippet correctly. Examine the code carefully to understand if the enter/update/exit selections are used, and how:&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;updateVisualization([10, 20, 30]);&lt;br&gt;&lt;/span&gt;&lt;span&gt;updateVisualization([40, 50]);&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;function updateVisualization(data) {&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;  let circles = svg.selectAll("circle")&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; .data(data)&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; .enter().append("circle")&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("r", 10)&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("cx", function(d, index) {&lt;br&gt;&lt;/span&gt;&lt;span&gt;      &amp;nbsp; return (index * 30) + 10;&lt;br&gt;&lt;/span&gt;&lt;span&gt;      })&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("cy", 20)&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("fill", function(d){&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;       if(d &amp;gt; 30)&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;       &amp;nbsp; return "blue";&lt;br&gt;&lt;/span&gt;&lt;span&gt;      &amp;nbsp; else&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;       &amp;nbsp; return "red";&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;     })&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="60223">
+                <material>
+                  <mattext texttype="text/plain">The function “updateVisualization()” is called twice with different values and a different array length</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1535">
+                <material>
+                  <mattext texttype="text/plain">There are 2 circles visible on the webpage after running updateVisualization([10, 20, 30]) and before calling the next function</mattext>
+                </material>
+              </response_label>
+              <response_label ident="72300">
+                <material>
+                  <mattext texttype="text/plain">There are 2 circles visible on the webpage after running the whole script</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9501">
+                <material>
+                  <mattext texttype="text/plain">There are 3 circles visible on the webpage after running the whole script</mattext>
+                </material>
+              </response_label>
+              <response_label ident="81994">
+                <material>
+                  <mattext texttype="text/plain">At the end there are only blue circles visible</mattext>
+                </material>
+              </response_label>
+              <response_label ident="10746">
+                <material>
+                  <mattext texttype="text/plain">At the end there are only red circles visible</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">60223</varequal>
+                <not>
+                  <varequal respident="response1">1535</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">72300</varequal>
+                </not>
+                <varequal respident="response1">9501</varequal>
+                <not>
+                  <varequal respident="response1">81994</varequal>
+                </not>
+                <varequal respident="response1">10746</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

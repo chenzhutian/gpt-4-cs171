@@ -1,0 +1,57 @@
+<item ident="g24058b278e0f510b7875b852f2dd48e2" title="CSS">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>9107,9660,6963</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g881f75cc8086d0ba18d61fe2d31c8aac</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt; A CSS rule-set consists of a selector and a declaration block. Please tick the answers with the correct CSS syntax:&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9107">
+                <material>
+                  <mattext texttype="text/plain">body { color: black; font-size:13px; }</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9660">
+                <material>
+                  <mattext texttype="text/plain">{ body: color=black font-size=13px }</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6963">
+                <material>
+                  <mattext texttype="text/plain">#body color=black; font-size=13px</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9107</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

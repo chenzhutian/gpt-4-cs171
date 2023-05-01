@@ -1,0 +1,166 @@
+<item ident="gc9ddfe67f67425e292fe9e2b49b4cee6" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>7540,6659,8770,3660</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf358e38c3d3892baeecb541bc1d1d842</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Match the letters in this visualization to the corresponding C.R.A.P. principles. (Use each principle of C.R.A.P. only once, and start with the ones you are most confident about)&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Companies-2.png" alt="Companies-2.png"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response_7540">
+            <material>
+              <mattext texttype="text/plain">B</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5196">
+                <material>
+                  <mattext>Contrast</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4858">
+                <material>
+                  <mattext>Repetition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8102">
+                <material>
+                  <mattext>Alignment</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3101">
+                <material>
+                  <mattext>Proximity</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_6659">
+            <material>
+              <mattext texttype="text/plain">C</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5196">
+                <material>
+                  <mattext>Contrast</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4858">
+                <material>
+                  <mattext>Repetition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8102">
+                <material>
+                  <mattext>Alignment</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3101">
+                <material>
+                  <mattext>Proximity</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_8770">
+            <material>
+              <mattext texttype="text/plain">A</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5196">
+                <material>
+                  <mattext>Contrast</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4858">
+                <material>
+                  <mattext>Repetition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8102">
+                <material>
+                  <mattext>Alignment</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3101">
+                <material>
+                  <mattext>Proximity</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_3660">
+            <material>
+              <mattext texttype="text/plain">D</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5196">
+                <material>
+                  <mattext>Contrast</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4858">
+                <material>
+                  <mattext>Repetition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8102">
+                <material>
+                  <mattext>Alignment</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3101">
+                <material>
+                  <mattext>Proximity</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_7540">5196</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_6659">4858</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_8770">8102</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_3660">3101</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">25.00</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

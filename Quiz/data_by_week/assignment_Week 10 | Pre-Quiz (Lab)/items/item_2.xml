@@ -1,0 +1,75 @@
+<item ident="g3e72a923300aef2c6c99e43e998597d7" title="Paths">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>75890,68116,27062,57439,86283</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ga33bcf2dbf9389779df8a73da9a6576d</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Please select the correct sentences regarding SVG paths and the implementation with D3: (select all that apply)&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="75890">
+                <material>
+                  <mattext texttype="text/plain">You can use an SVG path to make any type of SVG shape</mattext>
+                </material>
+              </response_label>
+              <response_label ident="68116">
+                <material>
+                  <mattext texttype="text/plain">D3's path generators (e.g. d3.svg.arc()) can take our data and convert it into the SVG path commands (x/y coordinates)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="27062">
+                <material>
+                  <mattext texttype="text/plain">When we want to use a D3 path generator, we have to initialize it first and provide accessor function for the x and y coordinates from our data</mattext>
+                </material>
+              </response_label>
+              <response_label ident="57439">
+                <material>
+                  <mattext texttype="text/plain">If you want to draw an SVG path, you have to use the helper classes of D3 for generating SVG path commands</mattext>
+                </material>
+              </response_label>
+              <response_label ident="86283">
+                <material>
+                  <mattext texttype="text/plain">You can either specify the SVG path commands manually in the "d" attribute or you can use D3's helper classes to generate these commands dynamically (e.g. for areas, lines, arcs)</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">75890</varequal>
+                <varequal respident="response1">68116</varequal>
+                <varequal respident="response1">27062</varequal>
+                <not>
+                  <varequal respident="response1">57439</varequal>
+                </not>
+                <varequal respident="response1">86283</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

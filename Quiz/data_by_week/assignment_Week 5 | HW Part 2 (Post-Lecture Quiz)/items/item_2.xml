@@ -1,0 +1,62 @@
+<item ident="g352b33ebf5f27cd2f820737aaf91800e" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6356,2741,9979,1028</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g14cbaeca2710a07add9a2031359dcabe</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Breaking the axis on a chart can be problematic, but it can also be useful in some cases. Which chart type should never have a broken axis?&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="6356">
+                <material>
+                  <mattext texttype="text/plain">Bar Chart</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2741">
+                <material>
+                  <mattext texttype="text/plain">Line Chart</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9979">
+                <material>
+                  <mattext texttype="text/plain">Dot Plot</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1028">
+                <material>
+                  <mattext texttype="text/plain">Box Plot</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6356</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

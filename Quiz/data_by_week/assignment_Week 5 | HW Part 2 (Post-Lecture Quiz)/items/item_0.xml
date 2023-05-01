@@ -1,0 +1,63 @@
+<item ident="g038e5a328bdb2f992b2a910682ac754f" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2504,346,8431,7856</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gc415c3deeaff93026780702e65c78795</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Which chart type would be the best choice to use as a redesign of this pie chart?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Picture1.png" alt="Picture1.png" width="324" height="232"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2504">
+                <material>
+                  <mattext texttype="text/plain">A scatterplot</mattext>
+                </material>
+              </response_label>
+              <response_label ident="346">
+                <material>
+                  <mattext texttype="text/plain">A bar chart</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8431">
+                <material>
+                  <mattext texttype="text/plain">A box plot showing the distribution by company</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7856">
+                <material>
+                  <mattext texttype="text/plain">A line chart showing Company B has the highest percent</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">346</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

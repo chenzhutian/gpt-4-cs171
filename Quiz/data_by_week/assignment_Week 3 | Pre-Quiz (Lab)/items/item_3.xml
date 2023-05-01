@@ -1,0 +1,58 @@
+<item ident="gb056c918ce702b54c381e291fdcb335a" title="JS Variables">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>32076,5872</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;I would like to use the previously initialized variable (let&lt;/span&gt;&lt;em&gt;&lt;span&gt;&amp;nbsp;cambridge = […]&lt;/span&gt;&lt;/em&gt;&lt;span&gt;) in my script. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Can I also call the variable by its name “Cambridge” after initialization? Or in other words, &lt;span style="text-decoration: underline;"&gt;is JavaScript case sensitive?&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="32076">
+                <material>
+                  <mattext texttype="text/plain">Yes, JavaScript is case sensitive. If I create the variable “var cambridge = …” I have to use the uncapitalized version afterwards.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5872">
+                <material>
+                  <mattext texttype="text/plain">No, JavaScript is not case sensitive. If I create the variable “var cambridge = …” I can also use the capitalized version afterwards.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">32076</varequal>
+                <not>
+                  <varequal respident="response1">5872</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

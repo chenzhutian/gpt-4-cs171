@@ -1,0 +1,67 @@
+<item ident="ge7cd2fa612de9705fa63b6cf890918ce" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>7283,7844,4758,6223,3952</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g649c0b9784c21d5f7d21099da1346029</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;We can direct readers to scan predominantly across rows or down columns of data by spacing the data. This practice demonstrates the Gestalt principle of:&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="7283">
+                <material>
+                  <mattext texttype="text/plain">Proximity</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7844">
+                <material>
+                  <mattext texttype="text/plain">Similarity</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4758">
+                <material>
+                  <mattext texttype="text/plain">Enclosure</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6223">
+                <material>
+                  <mattext texttype="text/plain">Continuity</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3952">
+                <material>
+                  <mattext texttype="text/plain">Connection</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7283</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

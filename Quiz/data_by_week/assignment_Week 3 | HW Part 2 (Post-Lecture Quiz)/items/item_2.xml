@@ -1,0 +1,352 @@
+<item ident="g93f070d6ffb5e5a1dcbd4d68f20b6e54" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2885,9337,6480,2046,2924,890</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ga352ec52bcdf0ba69b151e0c4829715d</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Match the appropriate components of this Tableau box &amp;amp; whisker plot. Here is a website with more information: &lt;a href="https://www.tableau.com/data-insights/reference-library/visual-analytics/charts/box-whisker" target="_blank"&gt;https://www.tableau.com/data-insights/reference-library/visual-analytics/charts/box-whisker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/BoxAndWhisker.jpg" alt="BoxAndWhisker.jpg" width="237" height="463"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response_2885">
+            <material>
+              <mattext texttype="text/plain">A</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="9573">
+                <material>
+                  <mattext>Max.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5494">
+                <material>
+                  <mattext>Most extreme value within 1.5* IQR above 75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4940">
+                <material>
+                  <mattext>75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7076">
+                <material>
+                  <mattext>Median</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5520">
+                <material>
+                  <mattext>25% Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9672">
+                <material>
+                  <mattext>Min.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8440">
+                <material>
+                  <mattext>Average</mattext>
+                </material>
+              </response_label>
+              <response_label ident="476">
+                <material>
+                  <mattext>Standard deviation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_9337">
+            <material>
+              <mattext texttype="text/plain">B</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="9573">
+                <material>
+                  <mattext>Max.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5494">
+                <material>
+                  <mattext>Most extreme value within 1.5* IQR above 75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4940">
+                <material>
+                  <mattext>75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7076">
+                <material>
+                  <mattext>Median</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5520">
+                <material>
+                  <mattext>25% Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9672">
+                <material>
+                  <mattext>Min.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8440">
+                <material>
+                  <mattext>Average</mattext>
+                </material>
+              </response_label>
+              <response_label ident="476">
+                <material>
+                  <mattext>Standard deviation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_6480">
+            <material>
+              <mattext texttype="text/plain">C</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="9573">
+                <material>
+                  <mattext>Max.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5494">
+                <material>
+                  <mattext>Most extreme value within 1.5* IQR above 75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4940">
+                <material>
+                  <mattext>75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7076">
+                <material>
+                  <mattext>Median</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5520">
+                <material>
+                  <mattext>25% Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9672">
+                <material>
+                  <mattext>Min.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8440">
+                <material>
+                  <mattext>Average</mattext>
+                </material>
+              </response_label>
+              <response_label ident="476">
+                <material>
+                  <mattext>Standard deviation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_2046">
+            <material>
+              <mattext texttype="text/plain">D</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="9573">
+                <material>
+                  <mattext>Max.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5494">
+                <material>
+                  <mattext>Most extreme value within 1.5* IQR above 75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4940">
+                <material>
+                  <mattext>75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7076">
+                <material>
+                  <mattext>Median</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5520">
+                <material>
+                  <mattext>25% Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9672">
+                <material>
+                  <mattext>Min.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8440">
+                <material>
+                  <mattext>Average</mattext>
+                </material>
+              </response_label>
+              <response_label ident="476">
+                <material>
+                  <mattext>Standard deviation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_2924">
+            <material>
+              <mattext texttype="text/plain">E</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="9573">
+                <material>
+                  <mattext>Max.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5494">
+                <material>
+                  <mattext>Most extreme value within 1.5* IQR above 75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4940">
+                <material>
+                  <mattext>75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7076">
+                <material>
+                  <mattext>Median</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5520">
+                <material>
+                  <mattext>25% Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9672">
+                <material>
+                  <mattext>Min.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8440">
+                <material>
+                  <mattext>Average</mattext>
+                </material>
+              </response_label>
+              <response_label ident="476">
+                <material>
+                  <mattext>Standard deviation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_890">
+            <material>
+              <mattext texttype="text/plain">F</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="9573">
+                <material>
+                  <mattext>Max.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5494">
+                <material>
+                  <mattext>Most extreme value within 1.5* IQR above 75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4940">
+                <material>
+                  <mattext>75th Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7076">
+                <material>
+                  <mattext>Median</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5520">
+                <material>
+                  <mattext>25% Percentile</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9672">
+                <material>
+                  <mattext>Min.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8440">
+                <material>
+                  <mattext>Average</mattext>
+                </material>
+              </response_label>
+              <response_label ident="476">
+                <material>
+                  <mattext>Standard deviation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_2885">9573</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_9337">5494</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_6480">4940</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_2046">7076</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_2924">5520</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_890">9672</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">16.67</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

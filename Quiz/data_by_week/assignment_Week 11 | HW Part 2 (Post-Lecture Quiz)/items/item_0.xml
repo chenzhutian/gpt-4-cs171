@@ -1,0 +1,69 @@
+<item ident="g4897405672f7d7f3e46b7128305c6a32" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6138,2020,5071,1503,2517</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g1ee485a72914a5ad57e427a8cab735e3</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Our ease in seeing how many fives are present in the picture below demonstrates which pre-attentive (pop-out) attribute?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Numbers.png" alt="Numbers.png" width="787" height="156"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="6138">
+                <material>
+                  <mattext texttype="text/plain">Hue (color)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2020">
+                <material>
+                  <mattext texttype="text/plain">Size</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5071">
+                <material>
+                  <mattext texttype="text/plain">Intensity (luminance)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1503">
+                <material>
+                  <mattext texttype="text/plain">Shape</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2517">
+                <material>
+                  <mattext texttype="text/plain">Orientation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">5071</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

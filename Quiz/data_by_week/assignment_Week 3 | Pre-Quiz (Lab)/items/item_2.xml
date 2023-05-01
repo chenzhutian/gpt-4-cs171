@@ -1,0 +1,74 @@
+<item ident="gde740c0d45ab2e37b79e90e83cc1f1ae" title="JS Array">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>51386,5633,24142,42621</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Select the answer with the correct value of the variable “&lt;/span&gt;&lt;i&gt;&lt;span&gt;favoritePlace&lt;/span&gt;&lt;/i&gt;&lt;span&gt;”.&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;let cambridge = [&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;Kendall Square&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;, &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;Central Square&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;, &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;Harvard Square&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;, &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;Porter Square&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;, &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;Inman Square&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;, &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;Lechmere Square&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;];&lt;br&gt;&lt;/strong&gt;&lt;span&gt;&lt;br&gt;&lt;strong&gt;let favoritePlace = &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;My favorite place in Cambridge is &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt; + cambridge[2] + &lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;span&gt;"&lt;/span&gt;&lt;strong&gt;;&lt;/strong&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="51386">
+                <material>
+                  <mattext texttype="text/plain">My favorite place in Cambridge is Harvard Square.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5633">
+                <material>
+                  <mattext texttype="text/plain">My favorite place in Cambridge is Kendall Square.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="24142">
+                <material>
+                  <mattext texttype="text/plain">My favorite place in Cambridge is Central Square.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="42621">
+                <material>
+                  <mattext texttype="text/plain">My favorite place in Cambridge is ["Kendall Square", "Central Square", "Harvard Square", "Porter Square", "Inman Square", "Lechmere Square"].</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">51386</varequal>
+                <not>
+                  <varequal respident="response1">5633</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">24142</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">42621</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

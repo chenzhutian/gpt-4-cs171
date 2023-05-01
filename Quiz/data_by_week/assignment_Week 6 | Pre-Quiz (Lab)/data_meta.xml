@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g2b35212c550dd980651cc8f6cb5a0e43" title="Week 6 | Pre-Quiz (Lab)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>1</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="g7fa0cb9ffda4db518f7a714395d296de" title="D3 Select">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.25</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>57284,73388,33755,49273</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Please select the sentences that describe the following code snippet correctly:&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;let circles = d3.select(“#chart-area”).selectAll(“circle”);&lt;/strong&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="57284">
+                <material>
+                  <mattext texttype="text/plain">The D3 statement returns all ‘circle’ elements within the element with the ID “chart-area”</mattext>
+                </material>
+              </response_label>
+              <response_label ident="73388">
+                <material>
+                  <mattext texttype="text/plain">The D3 statement returns all ‘circle’ elements within the HTML document</mattext>
+                </material>
+              </response_label>
+              <response_label ident="33755">
+                <material>
+                  <mattext texttype="text/plain">The D3 statement returns all ‘circle’ elements within the element with the class “chart-area”</mattext>
+                </material>
+              </response_label>
+              <response_label ident="49273">
+                <material>
+                  <mattext texttype="text/plain">The variable circles contains the results of the selection methods (select → selectAll)</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">57284</varequal>
+                <not>
+                  <varequal respident="response1">73388</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">33755</varequal>
+                </not>
+                <varequal respident="response1">49273</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g0e23f01e1ce99faacd8717333157f69b" title="D3 update pattern">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.35</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>47713,72693,12163,73781</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;
+&lt;span&gt;The update pattern is D3’s core technique: a data-join is followed by operations on the &lt;/span&gt;&lt;strong&gt;enter&lt;/strong&gt;&lt;span&gt;, &lt;/span&gt;&lt;strong&gt;update&lt;/strong&gt;&lt;span&gt; and &lt;/span&gt;&lt;strong&gt;exit&lt;/strong&gt;&lt;span&gt; selections. Suppose we have created a bar chart and want to render the chart with new data again. Please select the correct answers regarding the three virtual selections (enter, update, exit):&lt;/span&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="47713">
+                <material>
+                  <mattext texttype="text/plain">The “enter” selection contains placeholders for elements which do not exist yet (i.e. there are more data points than elements)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="72693">
+                <material>
+                  <mattext texttype="text/plain">The “update” selection contains all the existing elements that are also associated to the new data. This section help us to update the chart so that it matches the new data (e.g., update bar height)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="12163">
+                <material>
+                  <mattext texttype="text/plain">The “exit” selection contains the old dataset. It helps us to delete everything and to draw a completely new chart with the new data.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="73781">
+                <material>
+                  <mattext texttype="text/plain">The “exit” selection contains all the existing elements that are not associated with data anymore (i.e. there are fewer data points than elements)</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">47713</varequal>
+                <varequal respident="response1">72693</varequal>
+                <not>
+                  <varequal respident="response1">12163</varequal>
+                </not>
+                <varequal respident="response1">73781</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g183b819a29f8fca0cadca58eb7165ffb" title="D3 Example">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.4</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>60223,1535,72300,9501,81994,10746</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;This example should give you an idea why we need a well-thought updating concept. Imagine you have an empty page and a script that created an &amp;lt;svg&amp;gt;-element and stored the selection in the variable “svg”. Please select the correct answers that describe the following code snippet correctly. Examine the code carefully to understand if the enter/update/exit selections are used, and how:&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;updateVisualization([10, 20, 30]);&lt;br&gt;&lt;/span&gt;&lt;span&gt;updateVisualization([40, 50]);&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;function updateVisualization(data) {&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;  let circles = svg.selectAll("circle")&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; .data(data)&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; .enter().append("circle")&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("r", 10)&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("cx", function(d, index) {&lt;br&gt;&lt;/span&gt;&lt;span&gt;      &amp;nbsp; return (index * 30) + 10;&lt;br&gt;&lt;/span&gt;&lt;span&gt;      })&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("cy", 20)&lt;br&gt;&lt;/span&gt;&lt;span&gt;      .attr("fill", function(d){&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;       if(d &amp;gt; 30)&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;       &amp;nbsp; return "blue";&lt;br&gt;&lt;/span&gt;&lt;span&gt;      &amp;nbsp; else&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;       &amp;nbsp; return "red";&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;     })&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="60223">
+                <material>
+                  <mattext texttype="text/plain">The function “updateVisualization()” is called twice with different values and a different array length</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1535">
+                <material>
+                  <mattext texttype="text/plain">There are 2 circles visible on the webpage after running updateVisualization([10, 20, 30]) and before calling the next function</mattext>
+                </material>
+              </response_label>
+              <response_label ident="72300">
+                <material>
+                  <mattext texttype="text/plain">There are 2 circles visible on the webpage after running the whole script</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9501">
+                <material>
+                  <mattext texttype="text/plain">There are 3 circles visible on the webpage after running the whole script</mattext>
+                </material>
+              </response_label>
+              <response_label ident="81994">
+                <material>
+                  <mattext texttype="text/plain">At the end there are only blue circles visible</mattext>
+                </material>
+              </response_label>
+              <response_label ident="10746">
+                <material>
+                  <mattext texttype="text/plain">At the end there are only red circles visible</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">60223</varequal>
+                <not>
+                  <varequal respident="response1">1535</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">72300</varequal>
+                </not>
+                <varequal respident="response1">9501</varequal>
+                <not>
+                  <varequal respident="response1">81994</varequal>
+                </not>
+                <varequal respident="response1">10746</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

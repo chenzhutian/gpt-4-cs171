@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g2cf02a74a203351cee757803e642556d" title="Week 10 | HW Part 2 (Post-Lecture Quiz)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>1</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="g0e32ea1bfe959494c399c78b1dd1a975" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2025,4577,4433,7789</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g3a11831d50ab31712545203b260d5184</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Which color palette would be a better choice for this data visualization and why?&lt;/p&gt;
+&lt;p&gt;A. Red-Green Color Palette&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Picture1-1.png" alt="Picture1-1.png" width="321" height="239"&gt;&lt;/p&gt;
+&lt;p&gt;B. Blue-Orange Color Palette&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Picture2.png" alt="Picture2.png" width="326" height="239"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2025">
+                <material>
+                  <mattext texttype="text/plain">The Red-Green (A) because red is universally understood as bad and green as good.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4577">
+                <material>
+                  <mattext texttype="text/plain">The Red-Green (A) because it’s a color-blind friendly palette.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4433">
+                <material>
+                  <mattext texttype="text/plain">The Blue-Orange (B) because it’s a color-blind friendly palette.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7789">
+                <material>
+                  <mattext texttype="text/plain">Neither color palette is good because we should use a categorical color scheme for this purpose.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4433</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gd983b846033ee7ec7b0e82d5ab6ea5ef" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>264,5805,6757,4128</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gee9498747e294b419d9367858210d5bb</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Name the following color scheme used in the legends:&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Picture3.png" alt="Picture3.png"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="264">
+                <material>
+                  <mattext texttype="text/plain">Sequential</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5805">
+                <material>
+                  <mattext texttype="text/plain">Categorical</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6757">
+                <material>
+                  <mattext texttype="text/plain">Diverging</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4128">
+                <material>
+                  <mattext texttype="text/plain">Ordinal</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6757</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g7051f34f94235996f34169828f3a1eff" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>4049,2369,25,2038</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g7f33a975716fe1f9157bba2d50e0942d</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Name the color scheme used in the following visualization:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Picture4.png" alt="Picture4.png"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="4049">
+                <material>
+                  <mattext texttype="text/plain">Sequential</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2369">
+                <material>
+                  <mattext texttype="text/plain">Categorical</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25">
+                <material>
+                  <mattext texttype="text/plain">Diverging</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2038">
+                <material>
+                  <mattext texttype="text/plain">Ordinal</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2369</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g7447e8242f01bca4676d73e33c985e8f" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>5010,4947,4182,8866</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g0d93330f6f718780b185f879db236113</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;What are the three additive primary colors?&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="5010">
+                <material>
+                  <mattext texttype="text/plain">Red, Yellow, Blue</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4947">
+                <material>
+                  <mattext texttype="text/plain">Blue, Cyan, Green</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4182">
+                <material>
+                  <mattext texttype="text/plain">Cyan, Magenta, Yellow</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8866">
+                <material>
+                  <mattext texttype="text/plain">Red, Green, Blue</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8866</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g162b15b8f7e056be25ad011b46ace6ac" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6953,6472,6010,7663</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g8f5d5e096ef6cf8fe0b36d468fb36b76</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;What color scheme does the following infographic use?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded%20Media/Water-Thirsty-Energy-Infographic-FULL-Vertical-900.jpg" alt="Water-Thirsty-Energy-Infographic-FULL-Vertical-900.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="6953">
+                <material>
+                  <mattext texttype="text/plain">Monochromatic</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6472">
+                <material>
+                  <mattext texttype="text/plain">Complimentary</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6010">
+                <material>
+                  <mattext texttype="text/plain">Analogous</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7663">
+                <material>
+                  <mattext texttype="text/plain">Triadic</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6472</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

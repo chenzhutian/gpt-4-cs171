@@ -1,0 +1,73 @@
+<item ident="g7806766a2989f590c898f2b1d51b6e1e" title="What is happening here?">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>58558,20187,15158,97019</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g38ca5d342fecc1cb1bbbfafb0c8d2ec1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;pre class="brush: js notranslate line-numbers language-js"&gt;&lt;code class=" language-js"&gt;&lt;span class="token function"&gt;fetch&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token string"&gt;'http://example.com/movies.xml'&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;
+  &lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;then&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;response&lt;/span&gt; &lt;span class="token operator"&gt;=&amp;gt;&lt;/span&gt; response&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;json&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;
+  &lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;then&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;data&lt;/span&gt; &lt;span class="token operator"&gt;=&amp;gt;&lt;/span&gt; console&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;log&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;data&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;br&gt;&lt;br&gt;What is happening here? What is the output of the console.log? Is this code consistent? Select all that apply.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="58558">
+                <material>
+                  <mattext texttype="text/plain">We'll see an error message because we can't use the .json() method successfully on the response any more.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="20187">
+                <material>
+                  <mattext texttype="text/plain">The console log will be a 'stringified' json.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="15158">
+                <material>
+                  <mattext texttype="text/plain">In this example, the URL links to an xml file. The appropriate method to deal with this response object would be .text()</mattext>
+                </material>
+              </response_label>
+              <response_label ident="97019">
+                <material>
+                  <mattext texttype="text/plain">Since the body of the response object will be a long xml-structured string,  we need to use the .xmlToJson() method to convert the body of the response object into JSON format.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">58558</varequal>
+                <not>
+                  <varequal respident="response1">20187</varequal>
+                </not>
+                <varequal respident="response1">15158</varequal>
+                <not>
+                  <varequal respident="response1">97019</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

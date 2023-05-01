@@ -1,0 +1,89 @@
+<item ident="g241a55389cf49e72e464be2f4a3a5cfc" title="SVG coordinate system">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>97547,85715,25820,40530</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g26fb8feaffad394e880f6826271603dd</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;&lt;span&gt;The understanding of the&lt;/span&gt;&lt;strong&gt; SVG coordinate system&lt;/strong&gt;&lt;span&gt; is very important for creating visualizations with D3. We will use x- and y-coordinates in our scripts to specify the element positioning. Please select the answers which complete the following sentence correctly:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;SVG uses a pixel-based coordinate system in which the coordinate ...&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="97547">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located in the top-left corner of the drawing space</mattext>
+                </material>
+              </response_label>
+              <response_label ident="85715">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located in the top-left corner of the browser window</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25820">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located exactly in the center of the drawing space</mattext>
+                </material>
+              </response_label>
+              <response_label ident="40530">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located exactly in the center of the browser window</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="general_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">97547</varequal>
+                <not>
+                  <varequal respident="response1">85715</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">25820</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">40530</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="general_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Explanation: Increasing x-values move to the right, while increasing y-values move down.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+</item>

@@ -1,0 +1,62 @@
+<item ident="g7447e8242f01bca4676d73e33c985e8f" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>5010,4947,4182,8866</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g0d93330f6f718780b185f879db236113</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;What are the three additive primary colors?&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="5010">
+                <material>
+                  <mattext texttype="text/plain">Red, Yellow, Blue</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4947">
+                <material>
+                  <mattext texttype="text/plain">Blue, Cyan, Green</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4182">
+                <material>
+                  <mattext texttype="text/plain">Cyan, Magenta, Yellow</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8866">
+                <material>
+                  <mattext texttype="text/plain">Red, Green, Blue</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8866</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

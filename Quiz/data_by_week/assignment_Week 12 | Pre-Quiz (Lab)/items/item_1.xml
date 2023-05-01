@@ -1,0 +1,66 @@
+<item ident="g83c69fa137b0d1d744ea7d2923e298ed" title="Have you seen this before?">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.2</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>3715,8449,7016,798</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ged23b6e1897ab650451cc7f6c810d5c0</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Here's an example for a simple fetch() request from the documentation.&amp;nbsp;&lt;/p&gt;
+&lt;pre class="brush: js notranslate line-numbers language-js"&gt;&lt;code class=" language-js"&gt;&lt;span class="token function"&gt;fetch&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token string"&gt;'http://example.com/movies.json'&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;
+  &lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;then&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;response&lt;/span&gt; &lt;span class="token operator"&gt;=&amp;gt;&lt;/span&gt; response&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;json&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;
+  &lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;then&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;data&lt;/span&gt; &lt;span class="token operator"&gt;=&amp;gt;&lt;/span&gt; console&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;log&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;data&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The architecture of this code snipped should look somewhat familiar to you. Which lines do ring a bell and why?&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="3715">
+                <material>
+                  <mattext texttype="text/plain">I know the website. example.com is famous for its outstanding movie database.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8449">
+                <material>
+                  <mattext texttype="text/plain">the .then() method reminds me of the various d3 fetches (d3.csv, etc..) Apparently, the fetch API returns a promise as well.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7016">
+                <material>
+                  <mattext texttype="text/plain">I've seen console.logs before, and I know how a JSON data structure looks like, but other than that, I have no idea what's going on and I don't think that we've done anything close to that.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="798">
+                <material>
+                  <mattext texttype="text/plain">This is all new to me.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8449</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

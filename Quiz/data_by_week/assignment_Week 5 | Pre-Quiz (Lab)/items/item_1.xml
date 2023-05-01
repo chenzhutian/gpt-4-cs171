@@ -1,0 +1,75 @@
+<item ident="g6ccb1d762b3a4992388cfd44943a645f" title="Scales">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>53766,3318,72665,32278</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;
+&lt;span&gt;We have created a linear scale function with an &lt;/span&gt;&lt;strong&gt;input domain (0 - 1000)&lt;/strong&gt;&lt;span&gt; and an &lt;/span&gt;&lt;strong&gt;output range (0 - 100)&lt;/strong&gt;&lt;span&gt;. What is the correct result if we pass the input value &lt;/span&gt;&lt;strong&gt;500&lt;/strong&gt;&lt;span&gt; to the method?&lt;/span&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="53766">
+                <material>
+                  <mattext texttype="text/plain">50</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3318">
+                <material>
+                  <mattext texttype="text/plain">500</mattext>
+                </material>
+              </response_label>
+              <response_label ident="72665">
+                <material>
+                  <mattext texttype="text/plain">100</mattext>
+                </material>
+              </response_label>
+              <response_label ident="32278">
+                <material>
+                  <mattext texttype="text/plain">1000</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">53766</varequal>
+                <not>
+                  <varequal respident="response1">3318</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">72665</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">32278</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

@@ -1,0 +1,222 @@
+<item ident="gce0d956a7238aeda7952f18977ba0b7a" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>8920,7790,6881,8250,419</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g79e88c127d30e082ac6ac37f2050109a</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Put the elements of the story narrative or story arc by Gustav Freytag in the correct order.&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response_8920">
+            <material>
+              <mattext texttype="text/plain">1.</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5848">
+                <material>
+                  <mattext>Exposition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2599">
+                <material>
+                  <mattext>Raising Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3213">
+                <material>
+                  <mattext>Climax</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2237">
+                <material>
+                  <mattext>Falling Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7652">
+                <material>
+                  <mattext>Resolution</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_7790">
+            <material>
+              <mattext texttype="text/plain">2.</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5848">
+                <material>
+                  <mattext>Exposition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2599">
+                <material>
+                  <mattext>Raising Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3213">
+                <material>
+                  <mattext>Climax</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2237">
+                <material>
+                  <mattext>Falling Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7652">
+                <material>
+                  <mattext>Resolution</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_6881">
+            <material>
+              <mattext texttype="text/plain">3.</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5848">
+                <material>
+                  <mattext>Exposition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2599">
+                <material>
+                  <mattext>Raising Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3213">
+                <material>
+                  <mattext>Climax</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2237">
+                <material>
+                  <mattext>Falling Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7652">
+                <material>
+                  <mattext>Resolution</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_8250">
+            <material>
+              <mattext texttype="text/plain">4.</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5848">
+                <material>
+                  <mattext>Exposition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2599">
+                <material>
+                  <mattext>Raising Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3213">
+                <material>
+                  <mattext>Climax</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2237">
+                <material>
+                  <mattext>Falling Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7652">
+                <material>
+                  <mattext>Resolution</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_419">
+            <material>
+              <mattext texttype="text/plain">5.</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5848">
+                <material>
+                  <mattext>Exposition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2599">
+                <material>
+                  <mattext>Raising Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3213">
+                <material>
+                  <mattext>Climax</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2237">
+                <material>
+                  <mattext>Falling Action</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7652">
+                <material>
+                  <mattext>Resolution</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_8920">5848</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_7790">2599</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_6881">3213</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_8250">2237</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_419">7652</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

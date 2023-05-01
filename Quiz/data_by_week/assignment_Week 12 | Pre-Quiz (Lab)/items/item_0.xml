@@ -1,0 +1,70 @@
+<item ident="g138517102f460b2f80cebc2f5725c166" title="The Fetch API">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.2</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>9384,408,69896,64545</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g0e74c8e2386e3d1b44f711f6c713cd54</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Why is the Fetch API useful? (Select the three answers that apply)&lt;/p&gt;
+&lt;pre&gt;&lt;/pre&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="9384">
+                <material>
+                  <mattext texttype="text/plain">It allows us to fetch ressources asynchronously.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="408">
+                <material>
+                  <mattext texttype="text/plain">It's a simplified version of the XMLHttpRequest, which is the state of the art! However, in the CS171 setting, it makes sense to use fetch() because the teaching staff doesn't want to overwhelm the students..</mattext>
+                </material>
+              </response_label>
+              <response_label ident="69896">
+                <material>
+                  <mattext texttype="text/plain">It is extremely simple to set up.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="64545">
+                <material>
+                  <mattext texttype="text/plain">We can write some apply methods to the response object (by writing simple one-liners) to extract the information we need.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">9384</varequal>
+                <not>
+                  <varequal respident="response1">408</varequal>
+                </not>
+                <varequal respident="response1">69896</varequal>
+                <varequal respident="response1">64545</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

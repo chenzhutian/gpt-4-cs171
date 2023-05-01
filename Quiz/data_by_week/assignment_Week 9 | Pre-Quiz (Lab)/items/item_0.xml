@@ -1,0 +1,63 @@
+<item ident="g76843ed9e3c6583a153746722aa332fc" title="D3 Layouts">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>67685,2116,43548</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g61dde3e700fb110c62c2359992f78ea9</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Please select the correct two sentences regarding D3 layouts&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="67685">
+                <material>
+                  <mattext texttype="text/plain">D3 layout methods have no visual output</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2116">
+                <material>
+                  <mattext texttype="text/plain">D3 layout methods automatically draw pre-configured charts (e.g., pie chart). As a developer, you only need to pass the data and don’t have to draw the SVG elements manually.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="43548">
+                <material>
+                  <mattext texttype="text/plain">D3 layout methods transform given input data, so that is more convenient for a specific visualization type (e.g., histogram)</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">67685</varequal>
+                <not>
+                  <varequal respident="response1">2116</varequal>
+                </not>
+                <varequal respident="response1">43548</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

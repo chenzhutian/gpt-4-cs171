@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g7ead0328e3e41c58fd1a41ed3005bf95" title="Week 4 | Pre-Quiz (Lab)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>1</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="g54426a404ba9d003e65469cc50b97c1b" title="SVG">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.05</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>47613,69843,67422</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Please select the correct sentences regarding SVG&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="47613">
+                <material>
+                  <mattext texttype="text/plain">You can use SVG to define vector-based graphics for websites</mattext>
+                </material>
+              </response_label>
+              <response_label ident="69843">
+                <material>
+                  <mattext texttype="text/plain">You have to create an HTML element (canvas) "&lt;chart&gt;&lt;/chart&gt;" on which all the SVG elements are being rendered.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="67422">
+                <material>
+                  <mattext texttype="text/plain">SVG shapes will lose quality if you zoom in or resize them</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">47613</varequal>
+                <not>
+                  <varequal respident="response1">69843</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">67422</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g241a55389cf49e72e464be2f4a3a5cfc" title="SVG coordinate system">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>97547,85715,25820,40530</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g26fb8feaffad394e880f6826271603dd</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;&lt;span&gt;The understanding of the&lt;/span&gt;&lt;strong&gt; SVG coordinate system&lt;/strong&gt;&lt;span&gt; is very important for creating visualizations with D3. We will use x- and y-coordinates in our scripts to specify the element positioning. Please select the answers which complete the following sentence correctly:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;SVG uses a pixel-based coordinate system in which the coordinate ...&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="97547">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located in the top-left corner of the drawing space</mattext>
+                </material>
+              </response_label>
+              <response_label ident="85715">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located in the top-left corner of the browser window</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25820">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located exactly in the center of the drawing space</mattext>
+                </material>
+              </response_label>
+              <response_label ident="40530">
+                <material>
+                  <mattext texttype="text/plain">(0/0) is located exactly in the center of the browser window</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="general_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">97547</varequal>
+                <not>
+                  <varequal respident="response1">85715</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">25820</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">40530</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="general_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Explanation: Increasing x-values move to the right, while increasing y-values move down.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="g17094d8ac7e079520aa6560e5c3fed87" title="SVG depth order">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.05</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>15589,63288,64101</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;The arrangement of shapes is crucial when working on visualizations. Most of the time we don’t want that some visual elements obscure others. How can we influence the depth order when working with SVG elements?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="15589">
+                <material>
+                  <mattext texttype="text/plain">Similar to CSS we can use the “z-index” property to change the depth order. An element with greater depth order is always in front of an element with a lower depth order.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="63288">
+                <material>
+                  <mattext texttype="text/plain">The SVG property “depth” allows us to change the drawing order (Integer value between 0 and 100). An element with an higher number (depth order) is always in front of an element with a lower number.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="64101">
+                <material>
+                  <mattext texttype="text/plain">The order in which elements are coded determines their depth order. SVG has no real layering concept, meaning that you can only manipulate the drawing order. SVG elements that should be in the front, should be added at the end.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">15589</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">63288</varequal>
+                </not>
+                <varequal respident="response1">64101</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g47d439d81d8638d5a3262c0ad9196191" title="New D3 Project">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>62507,76100,8120</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;When you &lt;/span&gt;&lt;strong&gt;set up new D3 project&lt;/strong&gt;&lt;span&gt;, you should include all necessary JS libraries&lt;/span&gt;&lt;span&gt;.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Additionally, you have to do the following when setting up a new D3 project:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="62507">
+                <material>
+                  <mattext texttype="text/html">You have to include the JavaScript files needed into your “js” folder but the reference with the “&amp;lt;script&amp;gt;”-tags in the HTML document is optional.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="76100">
+                <material>
+                  <mattext texttype="text/html">You have to include all JS libraries (e.g., bootstrap, jQuery, d3) as well as your own JS documents in the header of your HTML document. The order doesn't matter as long as you use &amp;lt;script&amp;gt;&amp;lt;/script&amp;gt; tags.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8120">
+                <material>
+                  <mattext texttype="text/html">You have to include all JS libraries and own files at the bottom of your &amp;lt;body&amp;gt; before closing it. You should include foreign JS libraries first before including your own ones.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">62507</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">76100</varequal>
+                </not>
+                <varequal respident="response1">8120</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gac0efe80b0820409143878da76ae6538" title="Method Chaining">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>86500,77367,34425</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g04c952d869252d657f72edf90c50ddf9</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;strong&gt;&lt;i&gt;Method chaining&lt;/i&gt;&lt;/strong&gt;&lt;span&gt; is a common technique in JavaScript, especially when working with D3. Please select the correct sentences:&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="86500">
+                <material>
+                  <mattext texttype="text/plain">Method chaining can be used to simplify code in scenarios that involve calling multiple functions consecutively. Each method returns an object, allowing the calls to be chained together in a single statement without requiring variables to store the intermediate results.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="77367">
+                <material>
+                  <mattext texttype="text/plain">By “chaining” methods together with an ampersand (“&amp;”) you can perform several actions in a single line of code</mattext>
+                </material>
+              </response_label>
+              <response_label ident="34425">
+                <material>
+                  <mattext texttype="text/plain">When chaining methods together, the order matters! The output type of one method has to match the input type expected by the next method in the chain.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">86500</varequal>
+                <not>
+                  <varequal respident="response1">77367</varequal>
+                </not>
+                <varequal respident="response1">34425</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="g52324bd3268708f485224d0f36cf8f9f" title="D3 - Dynamic Content">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>72851,92643,59344,26389</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g0b19e8e5a4a5a36545d9c6b400d708a9</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;&lt;span&gt;How do you &lt;/span&gt;&lt;span&gt;add&lt;/span&gt;&lt;span&gt; the following element to the body of your HTML document with D3?&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;&amp;lt;div&amp;gt;Dynamic Content&amp;lt;/div&amp;gt;&lt;/strong&gt;&lt;/pre&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="72851">
+                <material>
+                  <mattext texttype="text/plain">d3.select("body").append("div").text("Dynamic Content");</mattext>
+                </material>
+              </response_label>
+              <response_label ident="92643">
+                <material>
+                  <mattext texttype="text/plain">d3.select("svg p").text("Dynamic Content");</mattext>
+                </material>
+              </response_label>
+              <response_label ident="59344">
+                <material>
+                  <mattext texttype="text/plain">d3.select("body").append("p").text("&lt;p&gt;Dynamic Content&lt;/p&gt;");</mattext>
+                </material>
+              </response_label>
+              <response_label ident="26389">
+                <material>
+                  <mattext texttype="text/plain">d3.select("body").append("&lt;p&gt;Dynamic Content&lt;/p&gt;");</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">72851</varequal>
+                <not>
+                  <varequal respident="response1">92643</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">59344</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">26389</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

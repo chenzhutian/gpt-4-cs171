@@ -1,0 +1,116 @@
+<item ident="g9b1c6250430197b8200f0f4891ff4b4d" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>7832,5212,7484</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g0e2f86055c13ce905a298712c9cff751</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Match the possible mathematical operations to each data type.&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response_7832">
+            <material>
+              <mattext texttype="text/plain">Categorical</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5525">
+                <material>
+                  <mattext>= or ≠ to other values</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2698">
+                <material>
+                  <mattext>&lt;/=/&gt; relationships</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2130">
+                <material>
+                  <mattext>All arithmetic operations</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_5212">
+            <material>
+              <mattext texttype="text/plain">Ordinal</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5525">
+                <material>
+                  <mattext>= or ≠ to other values</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2698">
+                <material>
+                  <mattext>&lt;/=/&gt; relationships</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2130">
+                <material>
+                  <mattext>All arithmetic operations</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_7484">
+            <material>
+              <mattext texttype="text/plain">Quantitative</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="5525">
+                <material>
+                  <mattext>= or ≠ to other values</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2698">
+                <material>
+                  <mattext>&lt;/=/&gt; relationships</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2130">
+                <material>
+                  <mattext>All arithmetic operations</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_7832">5525</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_5212">2698</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_7484">2130</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">33.33</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

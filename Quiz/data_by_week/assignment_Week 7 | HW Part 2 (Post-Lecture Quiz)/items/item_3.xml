@@ -1,0 +1,77 @@
+<item ident="ge7f82ef1d93b5bf7c25b8c8ad94a9647" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>8608,8837,1969,7696,24</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g4e5203ee881e346dc586b3fce5279914</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Dashboard Actions in Tableau include (select all 3 that apply):&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="8608">
+                <material>
+                  <mattext texttype="text/plain">Highlight</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8837">
+                <material>
+                  <mattext texttype="text/plain">Edit path</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1969">
+                <material>
+                  <mattext texttype="text/plain">Go to Dashboard</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7696">
+                <material>
+                  <mattext texttype="text/plain">Go to URL</mattext>
+                </material>
+              </response_label>
+              <response_label ident="24">
+                <material>
+                  <mattext texttype="text/plain">Filter</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">8608</varequal>
+                <not>
+                  <varequal respident="response1">8837</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">1969</varequal>
+                </not>
+                <varequal respident="response1">7696</varequal>
+                <varequal respident="response1">24</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

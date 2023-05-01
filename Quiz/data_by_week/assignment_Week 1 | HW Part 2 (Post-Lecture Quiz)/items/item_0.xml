@@ -1,0 +1,222 @@
+<item ident="g2a88f0df6dbfa3aafd3b69b6d98f7990" title="Question">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2857,9537,1507,8532,7003</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gc5bb7df0a708ecf1172d6a5a37bf946c</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Please sort the steps of a design sprint from first to last.&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response_2857">
+            <material>
+              <mattext texttype="text/plain">Step 1</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="814">
+                <material>
+                  <mattext>Map</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5404">
+                <material>
+                  <mattext>Sketch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9373">
+                <material>
+                  <mattext>Decide</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2374">
+                <material>
+                  <mattext>Prototype</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8121">
+                <material>
+                  <mattext>Test</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_9537">
+            <material>
+              <mattext texttype="text/plain">Step 2</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="814">
+                <material>
+                  <mattext>Map</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5404">
+                <material>
+                  <mattext>Sketch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9373">
+                <material>
+                  <mattext>Decide</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2374">
+                <material>
+                  <mattext>Prototype</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8121">
+                <material>
+                  <mattext>Test</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_1507">
+            <material>
+              <mattext texttype="text/plain">Step 3</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="814">
+                <material>
+                  <mattext>Map</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5404">
+                <material>
+                  <mattext>Sketch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9373">
+                <material>
+                  <mattext>Decide</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2374">
+                <material>
+                  <mattext>Prototype</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8121">
+                <material>
+                  <mattext>Test</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_8532">
+            <material>
+              <mattext texttype="text/plain">Step 4</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="814">
+                <material>
+                  <mattext>Map</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5404">
+                <material>
+                  <mattext>Sketch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9373">
+                <material>
+                  <mattext>Decide</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2374">
+                <material>
+                  <mattext>Prototype</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8121">
+                <material>
+                  <mattext>Test</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_7003">
+            <material>
+              <mattext texttype="text/plain">Step 5</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="814">
+                <material>
+                  <mattext>Map</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5404">
+                <material>
+                  <mattext>Sketch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9373">
+                <material>
+                  <mattext>Decide</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2374">
+                <material>
+                  <mattext>Prototype</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8121">
+                <material>
+                  <mattext>Test</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_2857">814</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_9537">5404</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_1507">9373</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_8532">2374</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_7003">8121</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Add">20.00</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

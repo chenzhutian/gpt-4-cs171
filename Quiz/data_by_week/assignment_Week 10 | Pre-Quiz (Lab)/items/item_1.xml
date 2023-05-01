@@ -1,0 +1,67 @@
+<item ident="g56dc3b66ab07395f3147757e74c4509c" title="Transitions">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.2</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>56894,19469,21995,68340</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g067ff57587f012f0995b5f2dd93635e7</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Animated transitions provide an eye pleasing effect when updating visual elements. For the user it is easier to follow data changes. (select all that apply)&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="56894">
+                <material>
+                  <mattext texttype="text/plain">You have to add the "transition()" operator to apply transitions to the current selection</mattext>
+                </material>
+              </response_label>
+              <response_label ident="19469">
+                <material>
+                  <mattext texttype="text/plain">By default the transition you specified will start automatically when the code is getting executed</mattext>
+                </material>
+              </response_label>
+              <response_label ident="21995">
+                <material>
+                  <mattext texttype="text/plain">By using the keywords "delay()" and "duration()" you can specify individual settings for the transition</mattext>
+                </material>
+              </response_label>
+              <response_label ident="68340">
+                <material>
+                  <mattext texttype="text/plain">To achieve object constancy when data items enter and exit (track a particular data point visually during the transition) with d3 you have to specify a key function as the second argument to selection.data</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">56894</varequal>
+                <varequal respident="response1">19469</varequal>
+                <varequal respident="response1">21995</varequal>
+                <varequal respident="response1">68340</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

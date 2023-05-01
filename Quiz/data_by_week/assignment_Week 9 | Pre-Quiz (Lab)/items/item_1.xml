@@ -1,0 +1,71 @@
+<item ident="gba40dd3cc20fec95736c06b90cf20374" title="GeoJSON">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.2</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>54228,24981,53850,17329</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gab5c7df2d411c6949337c3ad26b72c76</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Please select the correct two sentences regarding the GeoJSON format. (Select two)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="54228">
+                <material>
+                  <mattext texttype="text/plain">A GeoJSON file contains the object “FeatureCollection” and this object can contain any number of “Features”. A feature can be a “Point”, “Polygon”, “MultiPolygon” etc., and, therefore, it can consist of a list of many x/y coordinates.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="24981">
+                <material>
+                  <mattext texttype="text/plain">The coordinates in a GeoJSON Feature are sets of screen coordinates (pixel measures)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="53850">
+                <material>
+                  <mattext texttype="text/plain">The coordinates in a GeoJSON Feature are sets of longitude/latitude pairs</mattext>
+                </material>
+              </response_label>
+              <response_label ident="17329">
+                <material>
+                  <mattext texttype="text/plain">GeoJSON is a proper format to save the generated DOM tree</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">54228</varequal>
+                <not>
+                  <varequal respident="response1">24981</varequal>
+                </not>
+                <varequal respident="response1">53850</varequal>
+                <not>
+                  <varequal respident="response1">17329</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

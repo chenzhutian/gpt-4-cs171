@@ -1,0 +1,66 @@
+<item ident="g47d439d81d8638d5a3262c0ad9196191" title="New D3 Project">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>62507,76100,8120</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;When you &lt;/span&gt;&lt;strong&gt;set up new D3 project&lt;/strong&gt;&lt;span&gt;, you should include all necessary JS libraries&lt;/span&gt;&lt;span&gt;.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Additionally, you have to do the following when setting up a new D3 project:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="62507">
+                <material>
+                  <mattext texttype="text/html">You have to include the JavaScript files needed into your “js” folder but the reference with the “&amp;lt;script&amp;gt;”-tags in the HTML document is optional.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="76100">
+                <material>
+                  <mattext texttype="text/html">You have to include all JS libraries (e.g., bootstrap, jQuery, d3) as well as your own JS documents in the header of your HTML document. The order doesn't matter as long as you use &amp;lt;script&amp;gt;&amp;lt;/script&amp;gt; tags.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8120">
+                <material>
+                  <mattext texttype="text/html">You have to include all JS libraries and own files at the bottom of your &amp;lt;body&amp;gt; before closing it. You should include foreign JS libraries first before including your own ones.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">62507</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">76100</varequal>
+                </not>
+                <varequal respident="response1">8120</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

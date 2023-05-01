@@ -1,0 +1,63 @@
+<item ident="gae1fe2c6b291b36aa3894a7f4dda5328" title="Document Object Model">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>59028,69106,192</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>gc27598a924088766987b37a0b78a1de4</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Please select all the correct sentences (multiple answers possible)&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="59028">
+                <material>
+                  <mattext texttype="text/plain">The Document Object Model (DOM) refers to the hierarchical structure of HTML and will allow scripts to dynamically access and update the content, structure and style of documents.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="69106">
+                <material>
+                  <mattext texttype="text/plain">Looking at the content in the browser’s web inspector shows the DOM, not the raw HTML. The DOM often differs from the HTML, especially after JavaScript and D3 have modified/added/deleted the DOM elements dynamically.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="192">
+                <material>
+                  <mattext texttype="text/plain">The Document Object Model (DOM) is a web programming language.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">59028</varequal>
+                <varequal respident="response1">69106</varequal>
+                <not>
+                  <varequal respident="response1">192</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

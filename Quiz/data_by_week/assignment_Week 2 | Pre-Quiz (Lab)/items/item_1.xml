@@ -1,0 +1,57 @@
+<item ident="gf979d5f68b731dd7ac8f20ebfd23088e" title="External CSS">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>3219,9736,367</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g862c2d2c3c8f56120296ed0d439838f1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Where is the correct place to refer to an &lt;/span&gt;&lt;span style="text-decoration: underline;"&gt;&lt;span&gt;external stylesheet&lt;/span&gt;&lt;/span&gt;&lt;span&gt; in HTML documents?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="3219">
+                <material>
+                  <mattext texttype="text/plain">In the &lt;head&gt; section</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9736">
+                <material>
+                  <mattext texttype="text/plain">In the &lt;body&gt; section</mattext>
+                </material>
+              </response_label>
+              <response_label ident="367">
+                <material>
+                  <mattext texttype="text/plain">At the end of the document</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">3219</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>

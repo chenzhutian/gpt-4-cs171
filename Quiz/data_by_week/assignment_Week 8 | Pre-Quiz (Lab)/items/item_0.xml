@@ -1,0 +1,83 @@
+<item ident="gb4eb74a7d3a7520c99e320dcb854d557" title="&quot;this&quot; in JavaScript">
+<itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>0.1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>48231,23492,66809,88943,38649,4013</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>g3ac8c71351670d35d3fc747910d4a564</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Select the correct sentences regarding the keyword &lt;/span&gt;&lt;i&gt;&lt;span&gt;this&lt;/span&gt;&lt;/i&gt;&lt;span&gt; in JavaScript. (select 4)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="48231">
+                <material>
+                  <mattext texttype="text/plain">In the global execution context (outside of any function), "this" refers to the global object</mattext>
+                </material>
+              </response_label>
+              <response_label ident="23492">
+                <material>
+                  <mattext texttype="text/plain">In the global execution context (outside of any function), "this" is undefined</mattext>
+                </material>
+              </response_label>
+              <response_label ident="66809">
+                <material>
+                  <mattext texttype="text/plain">The value of "this", when used in a class object, is the object itself.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="88943">
+                <material>
+                  <mattext texttype="text/plain">Properties are variables contained in the class object. Every instance of the class has those properties.  The keyword "this" lets you work with class properties from within the class.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="38649">
+                <material>
+                  <mattext texttype="text/plain">You can change the value of "this" like for any other property in a class.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4013">
+                <material>
+                  <mattext texttype="text/plain">The value of "this" can change within a function.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">48231</varequal>
+                <not>
+                  <varequal respident="response1">23492</varequal>
+                </not>
+                <varequal respident="response1">66809</varequal>
+                <varequal respident="response1">88943</varequal>
+                <not>
+                  <varequal respident="response1">38649</varequal>
+                </not>
+                <varequal respident="response1">4013</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+</item>
